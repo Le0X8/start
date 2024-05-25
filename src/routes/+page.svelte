@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import WidgetArea from '$c/WidgetArea.svelte';
+
+  const widgets = [
+    {type: 'time', col: 1, row: 1, width: 16, height: 9},
+  ];
+</script>
+
+<main>
+	<WidgetArea {widgets} cols={16} rows={9} />
+</main>
